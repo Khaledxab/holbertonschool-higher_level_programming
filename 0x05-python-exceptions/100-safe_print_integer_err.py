@@ -7,3 +7,4 @@ def safe_print_integer_err(value):
     except (ValueError, TypeError) as er:
         sys.stderr.write("Exception: " + str(er) + "\n")
         return False
+
