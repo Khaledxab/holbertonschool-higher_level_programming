@@ -10,7 +10,8 @@ class Rectangle(BaseGeometry):
     Rectangle class
     """
     def __init__(self, width, height):
-        """validate and initialize width and height
+        """
+        validate and initialize width and height
         Args:
             width (int): private
             height (int): private
