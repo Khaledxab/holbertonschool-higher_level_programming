@@ -34,7 +34,6 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-    # width attribute getter and setter.
     @property
     def width(self):
         """Get and Set the width attribute of the Rectangle."""
@@ -48,7 +47,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-    # height attribute getter and setter.
     @property
     def height(self):
         """Get and Set the height attribute of the Rectangle."""
@@ -62,7 +60,6 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-    # x attribute getter and setter.
     @property
     def x(self):
         """Get and Set the x attribute of the Rectangle."""
@@ -76,7 +73,6 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-    # y attribute getter and setter.
     @property
     def y(self):
         """Get and Set the y attribute of the Rectangle."""
@@ -90,7 +86,6 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-    # Methods
     def area(self):
         """Returns the area value of the Rectangle instance."""
         return self.width * self.height
