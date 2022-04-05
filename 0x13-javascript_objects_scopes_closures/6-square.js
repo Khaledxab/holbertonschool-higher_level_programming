@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Square 
+// Write a class Square 
 
 const Rectangle = require('./5-square');
 
