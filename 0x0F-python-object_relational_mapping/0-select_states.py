@@ -13,7 +13,7 @@ if __name__ == '__main__':
 		db=argv[3],
 		charset="utf8"
 	)
-	c = db.cursor()
+	c = db.c()
 	c.excute("SELECT * FROM states ORDER BY id ASC")
 	rows = c.fetchall()
 	for r in rows:
