@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import urllib.request
 """
  a Python script that fetches https://intranet.hbtn.io/status
 """
+import urllib.request
 
 
 def fetch():
