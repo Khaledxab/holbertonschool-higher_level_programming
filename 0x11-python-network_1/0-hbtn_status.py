@@ -4,6 +4,7 @@ import urllib.request
  a Python script that fetches https://intranet.hbtn.io/status
 """
 
+
 def fetch():
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as reply:
         body = reply.read()
@@ -12,5 +13,6 @@ def fetch():
     print("\t- content: {}".format(body))
     print("\t- utf8 content: {}".format(body.decode(encoding="utf -8")))
 
+
 if __name__ == "__main__":
-	fetch
+    fetch()
