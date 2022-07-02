@@ -5,9 +5,8 @@ import sys
 
 
 def fetcher():
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        header = response.info()
-        print(header["X-Request-Id"])
+    with urllib.request.urlopen(sys.argv[1]) as reply:
+        print(reply.getheader('X-Request-Id'))
 
 
 if __name__ == "__main__":
