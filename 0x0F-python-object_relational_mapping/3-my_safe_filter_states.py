@@ -5,6 +5,7 @@
 import MySQLdb
 from sys import argv
 
+
 def safe():
     """Host Connect"""
     db = MySQLdb.connect(host="localhost",
@@ -22,6 +23,7 @@ def safe():
     states = c.fetchall()
     for idstate in states:
         print(idstate)
+
 
 """execute"""
 if __name__ == "__main__":
