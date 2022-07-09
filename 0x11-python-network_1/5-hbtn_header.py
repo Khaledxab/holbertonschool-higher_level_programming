@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""send a request 
+"""send a request
 and display the var X-Request-Id"""
 import requests
 from sys import argv
