@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """hbtn fetcher"""
+from os import link
 import requests
 
 
@@ -8,8 +9,8 @@ def fetch():
     r = requests.get(link)
     r = r.text
     print("Body response:")
-    print("\t- type: {}".format(type(r.text)))
-    print("\t- content: {}".format(r.text))
+    print("\t- type: {}".format(type(r)))
+    print("\t- content: {}".format(r))
 
 
 if __name__ == "__main__":
