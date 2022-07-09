@@ -10,6 +10,5 @@ def return0(argv):
     print(req.headers.get('X-Request-Id'))
 
 
-
 if __name__ == "__main__":
     return0(argv)
