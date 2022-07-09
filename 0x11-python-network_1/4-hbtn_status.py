@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """hbtn fetcher"""
-from os import link
 import requests
 
 
