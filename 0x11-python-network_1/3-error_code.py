@@ -2,18 +2,15 @@
 """err.code"""
 from urllib import (request, error)
 from sys import argv
-
-
-def errC():
-    request0 = request.Request(argv[1]) 
-    try:
-        with request.urlopen(request0) as response:
-            body = response.read()
-
-        print(body.decode('utf8'))
-    except error.HTTPerror as e:
-        print("error code: {}".format(e.code))
+from urllib import request
+import urllib.parse
+from sys import argv
 
 
 if __name__ == "__main__":
-    errC()
+    req0 = argv[1]
+    try:
+        with urllib.request.urlopen(req0) as response:
+            print(response.read().decode("utf-8"))
+    except urllib.error.URLError as e:
+        print("Error code: {}".format(e.code))
