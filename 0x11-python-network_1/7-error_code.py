@@ -7,7 +7,7 @@ from sys import argv
 def main(argv):
     reqget = requests.get(argv[1])
     if int(reqget.status_code) < 400:
-        print(r.text)
+        print(reqget.text)
     else:
         print("Error code: {}".format(reqget.status_code))
 
