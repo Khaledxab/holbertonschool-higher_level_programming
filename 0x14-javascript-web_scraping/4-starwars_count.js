@@ -4,7 +4,7 @@
 const request = require('request');
 const url = process.argv[2];
 let result = [];
-request.get(url, (error, body) => {
+request.get(url, (error, response, body) => {
   (error) ? console.log(error) : result = JSON.parse(body).results;
   let i = 0;
   for (const m in result) {
