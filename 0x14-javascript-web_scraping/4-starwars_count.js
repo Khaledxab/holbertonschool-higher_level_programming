@@ -1,19 +1,19 @@
 #!/usr/bin/node
 /** store a content in a file */
-/** chr= characters m= movie i= count */
+/** characters= characters movie= movieovie i= count */
 const request = require('request');
 const url = process.argv[2];
 let result = [];
 request.get(url, (err, response, body) => {
   (err) ? console.log(err) : result = JSON.parse(body).results;
-  let i = 0;
-  for (const m in result) {
-    const chr = result[m].chr;
-    for (const char in chr) {
-      if (chr[char].endsWith('/18/')) {
-        i += 1;
+  let count = 0;
+  for (const movie in result) {
+    const characters = result[movie].characters;
+    for (const char in characters) {
+      if (characters[char].endsWith('/18/')) {
+        count += 1;
       }
     }
   }
-  console.log(i);
+  console.log(count);
 });
