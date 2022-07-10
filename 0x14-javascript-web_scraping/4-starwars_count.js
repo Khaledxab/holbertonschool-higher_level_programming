@@ -4,8 +4,8 @@
 const request = require('request');
 const url = process.argv[2];
 let result = [];
-request.get(url, (error, response, body) => {
-  (error) ? console.log(error) : result = JSON.parse(body).results;
+request.get(url, (err, response, body) => {
+  (err) ? console.log(err) : result = JSON.parse(body).results;
   let i = 0;
   for (const m in result) {
     const chr = result[m].chr;
