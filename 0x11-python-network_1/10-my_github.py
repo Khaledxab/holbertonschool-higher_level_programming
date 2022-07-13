@@ -3,7 +3,7 @@
 import requests
 from sys import argv
 
-def github()
+def github():
     session = requests.Session()
     session.auth = (argv[1], argv[2])
     r = requests.get("https://api.github.com/user", auth=session.auth)
