@@ -3,6 +3,7 @@
 import requests
 from sys import argv
 
+
 def github():
     session = requests.Session()
     session.auth = (argv[1], argv[2])
