@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/**  gets contents of a webpage*/
+/**  gets contents of a webpage */
 const request = require('request');
 const fs = require('fs');
 const url = process.argv[2];
